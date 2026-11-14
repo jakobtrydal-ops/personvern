@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bible Quiz – personvern / privacy</title>
+<title>Bible Quiz – personvern / privacy / privacidad</title>
 <style>
   :root { --bg: #FFFFFF; --ink: #111318; --muted: #5B6474; --line: #D9DDE5; }
   @media (prefers-color-scheme: dark) { :root { --bg: #0B0E14; --ink: #F4F5F8; --muted: #A4ADBF; --line: #283142; } }
@@ -19,69 +19,141 @@
 <body>
 <main>
 <section lang="nb">
-  <h1>Personvernerklæring for Bible Quiz (Bibelquiz)</h1>
-  <p class="meta">Sist oppdatert: 7. november 2026</p>
-  <p>Bible Quiz er en bibelquiz for barn og voksne. Appen samler inn så lite som mulig. Opplysninger sendes ved bruk av flerspiller eller den globale topplisten.</p>
-  <h2>Det som bare lagres på telefonen</h2>
-  <p>Lokalt lagrede spillere, alder, den lokale topplisten, rekorder og innstillinger lagres på telefonen. Navn og avatar kan også sendes når du bruker flerspiller eller den globale topplisten.</p>
-  <h2>Flerspiller</h2>
-  <p>Hvis du bruker flerspillermodus, lagres kallenavnet ditt, avataren og poengene dine i et spillrom i Google Firebase (Cloud Firestore), sammen med en 4-sifret kode. Rommet er tilgjengelig for dem som kjenner koden. Når verten avslutter spillet, forsøker vertens app å slette rommet og spilleropplysningene. Hvis appen lukkes eller nettforbindelsen svikter før slettingen er fullført, kan opplysningene bli liggende til de slettes manuelt.</p>
+  <h1>Personvernerklæring for Bible Quiz (BibelQuiz)</h1>
+  <p class="meta">Sist oppdatert: 14. november 2026</p>
+  <p>Bible Quiz er en bibelquiz for barn og voksne, som app for Android og som nettside. Appen samler inn så lite som mulig. Det finnes ingen innlogging eller brukerkonto, ingen reklame og ingen analyseverktøy.</p>
+
+  <h2>Det som bare lagres på enheten</h2>
+  <p>Navn og avatar du skriver inn for spillerne, den lokale topplisten, rekorder, statistikk, merker, innstillinger og hvilke spørsmål du har sett, lagres bare på enheten din.</p>
+
   <h2>Global toppliste</h2>
-  <p>Når et spill er over, sendes disse opplysningene om hver spiller med poeng til den globale topplisten:</p>
+  <p>Når et spill er over, sendes dette om hver spiller med poeng til den globale topplisten:</p>
   <ul>
-    <li>navnet eller kallenavnet spilleren har skrevet inn (høyst 12 tegn)</li>
-    <li>avataren (et dyresymbol)</li>
-    <li>poengsummen</li>
+    <li>navnet eller kallenavnet spilleren har skrevet inn (høyst 20 tegn)</li>
+    <li>avataren (et symbol)</li>
+    <li>poengsummen og nivået</li>
+    <li>et lite merke dersom appen har Premium (vises ved navnet)</li>
   </ul>
-  <p>Ingenting annet sendes: ikke alder, e-post, posisjon, enhets-ID eller annen informasjon som kan identifisere telefonen. Opplysningene vises for alle som åpner den globale topplisten i appen, på en liste for inneværende måned og en liste for alle tider.</p>
-  <p>Topplisten lagres i Google Firebase (Cloud Firestore), som behandler dataene på våre vegne. Google kan i den forbindelse se teknisk informasjon som IP-adresse, slik alle nettjenester gjør, men denne lagres ikke i topplisten.</p>
-  <p>Du kan slå av sending til topplisten under <b>Innstillinger → Global toppliste → Ikke send</b>. Flerspillermodus sender fortsatt opplysninger når du bruker den.</p>
-  <h2>Hva appen ikke gjør</h2>
+  <p>Opplysningene vises for alle som åpner topplisten, på en liste for inneværende måned og en liste for alle tider. Du kan slå av sending under <b>Innstillinger → Global toppliste</b>. Da sendes ingenting til topplisten.</p>
+
+  <h2>Flerspiller</h2>
+  <p>Når du lager eller blir med i et flerspillerspill, lagres spillkoden, navnet, avataren, poengsummen, antall svar og eventuelt lag midlertidig, så alle i spillet kan se stillingen. Rommet slettes når verten avslutter, og ellers automatisk etter høyst ett døgn.</p>
+
+  <h2>Meld feil i et spørsmål</h2>
+  <p>Hvis du melder feil i et spørsmål, sendes spørsmålets nummer, språket, årsaken du velger, en eventuell kommentar (høyst 300 tegn) og tidspunktet. Ingen navn eller enhetsinformasjon sendes med. Ikke skriv personopplysninger i kommentaren.</p>
+
+  <h2>Premium-kjøp</h2>
+  <p>Kjøp skjer gjennom Google Play. Vi får ikke betalingsopplysninger. Appen spør Google Play om kjøpet er gjort, og bruker datoen appen først ble installert for å gi Premium gratis til dem som var med fra starten. Dette sendes ikke til oss.</p>
+
+  <h2>Varsler</h2>
+  <p>Påminnelser og varsler lages på telefonen og kan slås av hver for seg under Innstillinger. Ingen opplysninger sendes for å lage dem.</p>
+
+  <h2>Tjenester som behandler data på våre vegne</h2>
   <ul>
-    <li>Appen selger ikke personopplysninger eller deler dem for reklameformål.</li>
-    <li>Appen har ingen reklame og ingen analyseverktøy.</li>
-    <li>Appen ber ikke om tilgang til kontakter, posisjon, kamera eller mikrofon. Den bruker internett til flerspiller og den globale topplisten.</li>
-    <li>Det finnes ingen innlogging eller brukerkonto.</li>
+    <li><b>Cloudflare</b> (Workers og Durable Objects): toppliste, flerspiller, feilmeldinger og nettsidene.</li>
+    <li><b>Google Firebase</b>: tidligere toppliste og flerspillerrom laget med eldre versjoner av appen.</li>
+    <li><b>Google Play</b>: nedlasting, kjøp, oppdateringer og vurderinger.</li>
   </ul>
+  <p>Som alle nettjenester ser disse teknisk informasjon som IP-adresse når appen kobler seg til dem. Vi lagrer ikke IP-adresser, og vi bruker ikke enhets-ID, reklame-ID eller posisjon.</p>
+
+  <h2>Deling</h2>
+  <p>Vi selger ikke personopplysninger og deler dem ikke for reklameformål. De deles bare med tjenesteleverandørene som er nevnt over, for å drive appen. Når du selv deler et resultat eller en spillkode, bruker du telefonens vanlige deling, og du bestemmer selv hvor det sendes.</p>
+
+  <h2>Tillatelser</h2>
+  <p>Appen bruker internett, varsler og vibrasjon. Den ber ikke om tilgang til kontakter, posisjon, kamera, mikrofon eller filer.</p>
+
   <h2>Barn</h2>
-  <p>Appen kan brukes av barn. Vi anbefaler at barn bruker fornavn eller et kallenavn. Upassende navn erstattes automatisk med «Spiller».</p>
+  <p>Appen kan brukes av barn. Vi anbefaler fornavn eller kallenavn. Upassende navn stoppes automatisk.</p>
+
   <h2>Slette opplysningene</h2>
-  <p>Du kan slette lagrede spillere i appen, nullstille den lokale topplisten, eller slette alt på telefonen ved å avinstallere appen. Vil du at et navn skal fjernes fra den globale topplisten, send en e-post med navnet, avataren og omtrent når spillet ble spilt, så sletter vi det.</p>
+  <p>Du kan slette spillere og nullstille den lokale topplisten i appen, eller slette alt på enheten ved å avinstallere appen. Vil du ha et navn fjernet fra den globale topplisten, send en e-post med navnet, avataren og omtrent når spillet ble spilt, så sletter vi det.</p>
+
   <h2>Kontakt</h2>
-  <p>Spørsmål om personvern kan sendes til: <a href="mailto:JTapps9@outlook.com">JTapps9@outlook.com</a></p>
+  <p>Spørsmål om personvern: <a href="mailto:JTapps9@outlook.com">JTapps9@outlook.com</a></p>
 </section>
 <hr>
 <section lang="en">
   <h1>Privacy policy for Bible Quiz</h1>
-  <p class="meta">Last updated: 7 November 2026</p>
-  <p>Bible Quiz is a Bible quiz for children and adults. The app collects as little as possible. Information is sent when you use multiplayer or the global leaderboard.</p>
-  <h2>What is stored only on the phone</h2>
-  <p>Locally saved players, ages, the local high score list, records and settings are stored on your phone. Names and avatars may also be sent when you use multiplayer or the global leaderboard.</p>
-  <h2>Multiplayer</h2>
-  <p>If you use multiplayer, your nickname, avatar and score are stored in a game room in Google Firebase (Cloud Firestore), together with a 4-digit code. The room is accessible to anyone who knows the code. When the host ends the game, the host's app attempts to delete the room and player information. If the app is closed or the connection is lost before deletion is complete, the information may remain until it is deleted manually.</p>
+  <p class="meta">Last updated: 14 November 2026</p>
+  <p>Bible Quiz is a Bible quiz for children and adults, available as an Android app and as a website. The app collects as little as possible. There is no sign-in or account, no ads and no analytics.</p>
+
+  <h2>What is stored only on your device</h2>
+  <p>Player names and avatars you enter, the local high score list, records, statistics, badges, settings and which questions you have seen are stored only on your device.</p>
+
   <h2>Global leaderboard</h2>
   <p>When a game is over, the following is sent for each player who scored points:</p>
   <ul>
-    <li>the name or nickname the player entered (at most 12 characters)</li>
-    <li>the avatar (an animal symbol)</li>
-    <li>the score</li>
+    <li>the name or nickname the player entered (at most 20 characters)</li>
+    <li>the avatar (a symbol)</li>
+    <li>the score and level</li>
+    <li>a small badge if the app has Premium (shown next to the name)</li>
   </ul>
-  <p>Nothing else is sent: no age, email, location, device ID or other information that identifies the phone. This information is shown to everyone who opens the global leaderboard in the app, on a list for the current month and a list for all time.</p>
-  <p>The leaderboard is stored in Google Firebase (Cloud Firestore), which processes the data on our behalf. Like any online service, Google can see technical information such as the IP address, but it is not stored in the leaderboard.</p>
-  <p>You can turn off submissions to the leaderboard under <b>Settings → Global leaderboard → Don't share</b>. Multiplayer still sends information when you use it.</p>
-  <h2>What the app does not do</h2>
+  <p>This is shown to everyone who opens the leaderboard, on a list for the current month and a list for all time. You can turn sending off under <b>Settings → Global leaderboard</b>. Then nothing is sent to the leaderboard.</p>
+
+  <h2>Multiplayer</h2>
+  <p>When you create or join a multiplayer game, the game code, name, avatar, score, number of answers and any team are stored temporarily so everyone in the game can see the standings. The room is deleted when the host ends it, and otherwise automatically within one day.</p>
+
+  <h2>Report a problem with a question</h2>
+  <p>If you report a problem, the question number, language, the reason you choose, an optional comment (at most 300 characters) and the time are sent. No name or device information is included. Please do not write personal information in the comment.</p>
+
+  <h2>Premium purchase</h2>
+  <p>Purchases go through Google Play. We do not receive payment details. The app asks Google Play whether a purchase has been made, and uses the date the app was first installed to give Premium for free to early users. This is not sent to us.</p>
+
+  <h2>Notifications</h2>
+  <p>Reminders and notifications are created on the phone and can each be turned off in Settings. No information is sent to create them.</p>
+
+  <h2>Services that process data on our behalf</h2>
   <ul>
-    <li>The app does not sell personal data or share it for advertising purposes.</li>
-    <li>The app has no ads and no analytics.</li>
-    <li>The app does not request access to contacts, location, camera or microphone. It uses the internet for multiplayer and the global leaderboard.</li>
-    <li>There is no sign-in or user account.</li>
+    <li><b>Cloudflare</b> (Workers and Durable Objects): leaderboard, multiplayer, problem reports and the websites.</li>
+    <li><b>Google Firebase</b>: the earlier leaderboard and multiplayer rooms created by older versions of the app.</li>
+    <li><b>Google Play</b>: downloads, purchases, updates and reviews.</li>
   </ul>
+  <p>Like any online service, these see technical information such as the IP address when the app connects to them. We do not store IP addresses, and we do not use device IDs, advertising IDs or location.</p>
+
+  <h2>Sharing</h2>
+  <p>We do not sell personal data or share it for advertising. It is only shared with the service providers listed above, to run the app. When you share a result or a game code yourself, you use the phone's normal sharing and decide where it goes.</p>
+
+  <h2>Permissions</h2>
+  <p>The app uses internet, notifications and vibration. It does not request access to contacts, location, camera, microphone or files.</p>
+
   <h2>Children</h2>
-  <p>The app can be used by children. We recommend that children use a first name or a nickname. Inappropriate names are automatically replaced with "Player".</p>
-  <h2>Deleting the information</h2>
-  <p>You can delete saved players in the app, reset the local high score list, or delete everything on the phone by uninstalling the app. If you want a name removed from the global leaderboard, send an email with the name, the avatar and roughly when the game was played, and we will delete it.</p>
+  <p>The app can be used by children. We recommend a first name or nickname. Inappropriate names are blocked automatically.</p>
+
+  <h2>Deleting your information</h2>
+  <p>You can delete players and reset the local high score list in the app, or delete everything on the device by uninstalling the app. To have a name removed from the global leaderboard, email us the name, the avatar and roughly when the game was played, and we will delete it.</p>
+
   <h2>Contact</h2>
-  <p>Questions about privacy can be sent to: <a href="mailto:JTapps9@outlook.com">JTapps9@outlook.com</a></p>
+  <p>Privacy questions: <a href="mailto:JTapps9@outlook.com">JTapps9@outlook.com</a></p>
+</section>
+<hr>
+<section lang="es">
+  <h1>Política de privacidad de Quiz bíblico (Bible Quiz)</h1>
+  <p class="meta">Última actualización: 14 de noviembre de 2026</p>
+  <p>Quiz bíblico es un juego de preguntas sobre la Biblia para niños y adultos, como app para Android y como sitio web. La app recopila lo mínimo posible. No hay inicio de sesión ni cuenta, ni anuncios ni herramientas de análisis.</p>
+  <h2>Lo que se guarda solo en tu dispositivo</h2>
+  <p>Los nombres y avatares de los jugadores, la clasificación local, los récords, las estadísticas, las insignias, los ajustes y las preguntas ya vistas se guardan solo en tu dispositivo.</p>
+  <h2>Clasificación global</h2>
+  <p>Al terminar una partida se envía, por cada jugador con puntos: el nombre o apodo (máximo 20 caracteres), el avatar, la puntuación y el nivel, y una pequeña insignia si la app tiene Premium. Se muestra a todos en una lista del mes y una de siempre. Puedes desactivar el envío en <b>Ajustes → Clasificación global</b>.</p>
+  <h2>Multijugador</h2>
+  <p>Al crear o unirte a una partida se guardan temporalmente el código, el nombre, el avatar, la puntuación, el número de respuestas y el equipo, para que todos vean la clasificación. La sala se borra cuando el anfitrión termina y, si no, automáticamente en un día como máximo.</p>
+  <h2>Informar de un error en una pregunta</h2>
+  <p>Se envían el número de la pregunta, el idioma, el motivo, un comentario opcional (máximo 300 caracteres) y la hora. No se incluye nombre ni información del dispositivo. No escribas datos personales en el comentario.</p>
+  <h2>Compra Premium</h2>
+  <p>Las compras se hacen en Google Play. No recibimos datos de pago. La app consulta a Google Play si hay una compra y usa la fecha de la primera instalación para dar Premium gratis a los primeros usuarios. Esto no se nos envía.</p>
+  <h2>Notificaciones</h2>
+  <p>Los recordatorios se crean en el teléfono y se pueden desactivar uno por uno en Ajustes.</p>
+  <h2>Servicios que tratan datos por encargo nuestro</h2>
+  <p>Cloudflare (clasificación, multijugador, informes y sitios web), Google Firebase (clasificación anterior y salas de versiones antiguas de la app) y Google Play (descargas, compras y valoraciones). Como cualquier servicio en línea, ven datos técnicos como la dirección IP. No guardamos direcciones IP ni usamos identificadores del dispositivo, de publicidad ni ubicación.</p>
+  <h2>Compartir</h2>
+  <p>No vendemos datos personales ni los compartimos con fines publicitarios. Solo se comparten con los proveedores de servicios mencionados arriba, para hacer funcionar la aplicación. Cuando compartes un resultado o un código, usas la función normal del teléfono y decides tú adónde va.</p>
+  <h2>Permisos</h2>
+  <p>La app usa internet, notificaciones y vibración. No pide acceso a contactos, ubicación, cámara, micrófono ni archivos.</p>
+  <h2>Niños</h2>
+  <p>La app puede ser usada por niños. Recomendamos un nombre de pila o un apodo. Los nombres inapropiados se bloquean automáticamente.</p>
+  <h2>Borrar tus datos</h2>
+  <p>Puedes borrar jugadores y reiniciar la clasificación local en la app, o borrarlo todo desinstalándola. Para quitar un nombre de la clasificación global, escríbenos con el nombre, el avatar y la fecha aproximada.</p>
+  <h2>Contacto</h2>
+  <p><a href="mailto:JTapps9@outlook.com">JTapps9@outlook.com</a></p>
 </section>
 </main>
 </body>
